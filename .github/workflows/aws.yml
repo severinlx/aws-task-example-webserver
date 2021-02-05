@@ -24,10 +24,8 @@
 #    and best practices on handling the access key credentials.
 name: Deploy to Amazon ECS
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  release:
+    types: [created]
 
 jobs:
   deploy:
